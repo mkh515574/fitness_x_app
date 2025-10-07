@@ -21,9 +21,12 @@ class LoginScreen extends StatelessWidget {
             children: [
               Text("Hey there,", style: AppStyles.regular16BlackText),
               SizedBox(height: 16.h),
-              Text("Login To Account", style: AppStyles.bold20BlackText),
+              Text("Welcome Back", style: AppStyles.bold20BlackText),
               SizedBox(height: 100.h),
               LoginFormBody(),
+              SizedBox(height: 10.h),
+              Align(),
+
               Spacer(),
               _buildOrDivider(),
               SizedBox(height: 20.h),

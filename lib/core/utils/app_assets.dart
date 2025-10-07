@@ -9,6 +9,8 @@ class AppAssets {
   static const passwordIcon = "assets/icons/password_icon.png";
   static const googleIcon = "assets/icons/google_icon.png";
   static const facebookIcon = "assets/icons/facebook_icon.png";
+  static const loginIcon = "assets/icons/Login.png";
+
 
 
 
