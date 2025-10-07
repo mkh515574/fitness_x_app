@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../utils/app_colors.dart';
 import '../utils/app_styles.dart';
@@ -43,8 +44,9 @@ class CustomTextFormField extends StatelessWidget {
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
+        contentPadding:  EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
         filled: true,
-        fillColor: AppColors.whiteColor,
+        fillColor: fillColor?? AppColors.whiteColor,
         enabledBorder: builtOutlinedInputBorder(
           colorBorderSide: colorBorderSide,
         ),
@@ -58,9 +60,9 @@ class CustomTextFormField extends StatelessWidget {
           colorBorderSide: AppColors.redColor,
         ),
         hintText: hintText,
-        hintStyle: hintStyle ?? AppStyles.bold16BlueLinerText,
+        hintStyle: hintStyle ?? AppStyles.regular14GrayText,
         labelText: labelText,
-        labelStyle: labelStyle ?? AppStyles.bold16WhiteText,
+        labelStyle: labelStyle ?? AppStyles.regular14GrayText,
         prefixIcon: prefixIcon,
         suffixIcon: suffixIcon,
         errorStyle: AppStyles.bold16WhiteText.copyWith(color: AppColors.redColor),
