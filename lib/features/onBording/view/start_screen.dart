@@ -29,7 +29,7 @@ class StartScreen extends StatelessWidget {
 
               CustomElevatedButton(
                 onPressed: () {
-                  Navigator.pushReplacementNamed(context, AppRoutes.onBoarding);
+                  Navigator.pushReplacementNamed(context, AppRoutes.login);
                 },
 
                 text: "Get Started",

@@ -1,32 +1,32 @@
 import 'package:fitness_x_app/core/utils/app_assets.dart';
 import 'package:fitness_x_app/core/utils/app_colors.dart';
 import 'package:fitness_x_app/core/utils/app_styles.dart';
-import 'package:fitness_x_app/features/auth/register/view/widgets/register_form_body.dart';
+import 'package:fitness_x_app/features/auth/login/view/widgets/login_form_body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 import '../../../../core/utils/app_routes.dart';
 
-class RegisterScreen extends StatelessWidget {
-  const RegisterScreen({super.key});
+class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
         child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 30.h),
+          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 50.h),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text("Hey there,", style: AppStyles.regular16BlackText),
-              SizedBox(height: 10.h),
-              Text("Create an Account", style: AppStyles.bold20BlackText),
-              SizedBox(height: 30.h),
-              RegisterFormBody(),
-              SizedBox(height: 10.h),
+              SizedBox(height: 16.h),
+              Text("Login To Account", style: AppStyles.bold20BlackText),
+              SizedBox(height: 100.h),
+              LoginFormBody(),
+              Spacer(),
               _buildOrDivider(),
-              SizedBox(height: 10.h),
+              SizedBox(height: 20.h),
               _buildSocialAuth(),
               SizedBox(height: 10.h),
               _buildLoginNavigation(context)
@@ -80,14 +80,14 @@ Widget _buildLoginNavigation(context) => Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         Text(
-          "Already have an account?",
+          "Don't have an account?",
           style: AppStyles.regular16BlackText.copyWith(fontSize: 14),
         ),
         TextButton(
           onPressed: () {
-            Navigator.pushNamed(context, AppRoutes.login);
+            Navigator.pushNamed(context, AppRoutes.register);
           },
-          child: Text("Login", style: AppStyles.bold16BlueLinerText),
+          child: Text("Register", style: AppStyles.bold16BlueLinerText),
         ),
       ],
     );

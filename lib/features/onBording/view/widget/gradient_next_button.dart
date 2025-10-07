@@ -28,7 +28,7 @@ class AnimatedNextButton extends StatelessWidget {
           );
         } else {
 
-               Navigator.pushNamed(context, AppRoutes.startScreen);
+               Navigator.pushReplacementNamed(context, AppRoutes.startScreen);
       
         }
       },
