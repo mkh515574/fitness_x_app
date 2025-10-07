@@ -1,3 +1,4 @@
+import 'package:fitness_x_app/features/auth/login/view/login_screen.dart';
 import 'package:fitness_x_app/features/onBording/view/on_boarding_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -18,6 +19,7 @@ class AppRoutes {
 
   static Map<String, Widget Function(BuildContext)> routes = {
     register: (context) => const RegisterScreen(),
+    login: (context) => const LoginScreen(),
 
     startScreen: (context) => const StartScreen(),
     onBoarding: (context) =>  OnBoardingScreen(),
