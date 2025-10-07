@@ -4,6 +4,7 @@ import 'package:fitness_x_app/core/widgets/custom_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
+import '../../../../../core/utils/app_styles.dart';
 import '../../../../../core/widgets/custom_elevated_button.dart';
 
 class LoginFormBody extends StatelessWidget {
@@ -28,11 +29,20 @@ class LoginFormBody extends StatelessWidget {
             suffixIcon: Icon(Icons.visibility_off, color: AppColors.gray3Color),
             hintText: "Password",
           ),
-          SizedBox(height: 16.h),
-
+          SizedBox(height: 20.h),
+          Align(
+            alignment: Alignment.centerRight,
+            child: Text(
+              "Forgot Password?",
+              style: AppStyles.regular14GrayText.copyWith(
+                decoration: TextDecoration.underline,
+              ),
+              textAlign: TextAlign.end,
+            ),
+          ),
 
           SizedBox(height: 50.h),
-          CustomElevatedButton(onPressed: () {}, text: "Login"),
+          CustomElevatedButton(onPressed: () {}, text: "Login",buttonContent:Image.asset(AppAssets.loginIcon),),
         ],
       ),
     );
