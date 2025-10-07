@@ -16,6 +16,20 @@ class AppStyles {
     color: AppColors.primaryColor,
   );
 
+    static TextStyle bold24BlackText = GoogleFonts.poppins(
+    fontSize: 24,
+    fontWeight: FontWeight.bold,
+    color: AppColors.blackColor,
+  );
+    static TextStyle regular14GrayText = GoogleFonts.poppins(
+      fontSize: 14,
+    fontWeight: FontWeight.normal,
+    color: AppColors.grayColor,
+
+
+    );
+
+
 
 
 }
