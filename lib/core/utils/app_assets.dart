@@ -18,6 +18,12 @@ class AppAssets {
   static const googleIcon = "assets/icons/google_icon.png";
   static const facebookIcon = "assets/icons/facebook_icon.png";
   static const loginIcon = "assets/icons/Login.png";
+  static const genderIcon  = "assets/icons/gender_icon.png";
+  static const calendarIcon  = "assets/icons/Calendar.png";
+  static const heightIcon  = "assets/icons/height.png";
+  static const weightIcon  = "assets/icons/weight.png";
+
+
 
 
 

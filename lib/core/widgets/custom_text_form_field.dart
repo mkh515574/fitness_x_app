@@ -23,6 +23,7 @@ class CustomTextFormField extends StatelessWidget {
     this.keyboardType = TextInputType.text,
     this.obscureText = false,
     this.obscuringCharacter = '•',
+    this.enabled = true,
     this.maxLines = 1,
   });
   final Color colorBorderSide;
@@ -40,12 +41,19 @@ class CustomTextFormField extends StatelessWidget {
   final bool obscureText;
   final String obscuringCharacter;
   final int maxLines;
+  final bool? enabled;
+
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       decoration: InputDecoration(
         contentPadding:  EdgeInsets.symmetric(horizontal: 16.w, vertical: 16.h),
         filled: true,
+        disabledBorder: OutlineInputBorder(
+          borderRadius: BorderRadius.circular(16),
+          borderSide: BorderSide(color: AppColors.transparentColor, width: 2),
+        ),
+        enabled: enabled!,
         fillColor: fillColor?? AppColors.whiteColor,
         enabledBorder: builtOutlinedInputBorder(
           colorBorderSide: colorBorderSide,

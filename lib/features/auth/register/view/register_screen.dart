@@ -13,27 +13,29 @@ class RegisterScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 30.h),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Text("Hey there,", style: AppStyles.regular16BlackText),
-              SizedBox(height: 10.h),
-              Text("Create an Account", style: AppStyles.bold20BlackText),
-              SizedBox(height: 30.h),
-              RegisterFormBody(),
-              SizedBox(height: 10.h),
-              _buildOrDivider(),
-              SizedBox(height: 10.h),
-              _buildSocialAuth(),
-              SizedBox(height: 10.h),
-              _buildLoginNavigation(context)
-            ],
+      body: SingleChildScrollView(
+        child: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.symmetric(horizontal: 20.w, vertical: 30.h),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Text("Hey there,", style: AppStyles.regular16BlackText),
+                SizedBox(height: 10.h),
+                Text("Create an Account", style: AppStyles.bold20BlackText),
+                SizedBox(height: 30.h),
+                RegisterFormBody(),
+                SizedBox(height: 10.h),
+                _buildOrDivider(),
+                SizedBox(height: 10.h),
+                _buildSocialAuth(),
+                SizedBox(height: 10.h),
+                _buildLoginNavigation(context)
+              ],
+            ),
           ),
         ),
-      ),
+      )
     );
   }
 }
@@ -81,7 +83,7 @@ Widget _buildLoginNavigation(context) => Row(
       children: [
         Text(
           "Already have an account?",
-          style: AppStyles.regular16BlackText.copyWith(fontSize: 14),
+          style: AppStyles.regular16BlackText.copyWith(fontSize: 14.sp),
         ),
         TextButton(
           onPressed: () {

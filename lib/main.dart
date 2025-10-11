@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         theme: AppTheme.lightTheme,
         darkTheme: AppTheme.darkTheme,
         themeMode: ThemeMode.system,
-        initialRoute: AppRoutes.onBoarding,
+        initialRoute: AppRoutes.startScreen,
         debugShowCheckedModeBanner: false,
         routes: AppRoutes.routes,
       ),
