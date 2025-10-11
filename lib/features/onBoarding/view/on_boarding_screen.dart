@@ -1,7 +1,7 @@
-import 'package:fitness_x_app/features/onBording/view/widget/gradient_next_button.dart';
+import 'package:fitness_x_app/features/onBoarding/view/widget/gradient_next_button.dart';
 import 'package:flutter/material.dart';
 import 'package:fitness_x_app/core/utils/app_assets.dart';
-import 'package:fitness_x_app/features/onBording/view/widget/page_view_item.dart';
+import 'package:fitness_x_app/features/onBoarding/view/widget/page_view_item.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import '../model/on_boarding_model.dart';
 
