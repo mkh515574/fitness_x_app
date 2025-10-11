@@ -32,7 +32,7 @@ class LoginScreen extends StatelessWidget {
               SizedBox(height: 20.h),
               _buildSocialAuth(),
               SizedBox(height: 10.h),
-              _buildLoginNavigation(context)
+              _buildLoginNavigation(context),
             ],
           ),
         ),
@@ -49,8 +49,6 @@ Widget _buildSocialAuth() => Row(
     GestureDetector(onTap: () {}, child: Image.asset(AppAssets.facebookIcon)),
   ],
 );
-
-
 
 Widget _buildOrDivider() => Row(
   mainAxisAlignment: MainAxisAlignment.center,
@@ -76,21 +74,18 @@ Widget _buildOrDivider() => Row(
   ],
 );
 
-
-
-
 Widget _buildLoginNavigation(context) => Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          "Don't have an account?",
-          style: AppStyles.regular16BlackText.copyWith(fontSize: 14),
-        ),
-        TextButton(
-          onPressed: () {
-            Navigator.pushNamed(context, AppRoutes.register);
-          },
-          child: Text("Register", style: AppStyles.bold16BlueLinerText),
-        ),
-      ],
-    );
+  mainAxisAlignment: MainAxisAlignment.center,
+  children: [
+    Text(
+      "Don't have an account?",
+      style: AppStyles.regular16BlackText.copyWith(fontSize: 14),
+    ),
+    TextButton(
+      onPressed: () {
+        Navigator.pushNamed(context, AppRoutes.register);
+      },
+      child: Text("Register", style: AppStyles.bold16BlueLinerText),
+    ),
+  ],
+);

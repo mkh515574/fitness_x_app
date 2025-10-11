@@ -87,9 +87,11 @@ class RegisterFormBody extends StatelessWidget {
               ),
             ],
           ),
-          SizedBox(height: 100.h),
+          SizedBox(height: 80.h),
           CustomElevatedButton(
-            onPressed: () {},
+            onPressed: () {
+              Navigator.pushNamed(context, "/register2");
+            },
             text: "Register",
           ),
 

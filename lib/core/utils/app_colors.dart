@@ -22,6 +22,9 @@ class AppColors {
   static const Color grayColor = Color(0xff7B6F72);
   static const Color gray2Color = Color(0xffF7F8F8);
   static const Color gray3Color = Color(0xffADA4A5);
+  static const Color purpleColor = Color(0xffC58BF2);
+  static const Color purpleEndColor = Color(0xffEEA4CE);
+
 
   static const Color lightRedColor = Color(0xFFFF645A);
   static const Color transparentColor = Colors.transparent;
